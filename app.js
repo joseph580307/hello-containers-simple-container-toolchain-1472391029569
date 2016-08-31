@@ -1,3 +1,4 @@
+/*eslint-env node */
 /**
 * Copyright 2014 IBM
 *
@@ -13,14 +14,14 @@
 *   See the License for the specific language governing permissions and
 **/
 
-var express = require('express');
+var express = require("express");
 
 var PORT = 80;
 
 var app = express();
-app.get('/', function (req, res) {
-  res.send('歡迎使用 Bluemix DevOps with Docker. Lets go use Pipeline Services');
+app.get("/", function (req, res) {
+  res.send("Bluemix DevOps with Docker. Lets go use Pipeline Services");
 });
 
 app.listen(PORT)
-console.log(' Application Running on port' + PORT);
+console.log(" Application Running on port" + PORT);
